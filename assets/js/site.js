@@ -251,6 +251,40 @@
     });
   }
 
+  var enquiryForm = document.getElementById("enquiryForm");
+  if (enquiryForm) {
+    enquiryForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+      if (enquiryForm.reportValidity && !enquiryForm.reportValidity()) return;
+      var value = function (name) {
+        var field = enquiryForm.elements[name];
+        return field ? String(field.value || "").trim() : "";
+      };
+      var lines = ["Hello S2D Contracting, I would like to discuss a project.", ""];
+      [
+        ["Name", "name"],
+        ["Phone", "phone"],
+        ["Email", "email"],
+        ["Project type", "project-type"],
+        ["Location", "location"],
+        ["Details", "message"]
+      ].forEach(function (row) {
+        var text = value(row[1]);
+        if (text) lines.push(row[0] + ": " + text);
+      });
+      var number = enquiryForm.getAttribute("data-whatsapp");
+      var url = "https://wa.me/" + number + "?text=" + encodeURIComponent(lines.join("\n"));
+      var opened = window.open(url, "_blank");
+      if (opened) {
+        opened.opener = null;
+      } else {
+        window.location.href = url;
+      }
+      var note = document.getElementById("enquiryNote");
+      if (note) note.textContent = "WhatsApp opened with your enquiry. Press send there to reach our team.";
+    });
+  }
+
   window.S2D = window.S2D || {};
   window.S2D.mountImage = mountImage;
   window.S2D.watchFabBlocker = function (el) {

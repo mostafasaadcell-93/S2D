@@ -14,10 +14,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&amp;family=Marcellus&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/site.css?v=fix2">
+  <link rel="stylesheet" href="/assets/css/site.css?v=wa1">
   <script defer src="/assets/js/images.js?v=real1"></script>
   <script defer src="/assets/js/projects-data.js?v=real1"></script>
-  <script defer src="/assets/js/site.js?v=real1"></script>
+  <script defer src="/assets/js/site.js?v=wa1"></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -208,7 +208,7 @@
         <div class="contact-intro reveal">
           <p class="kicker on-dark">Start Your Project</p>
           <h2>Tell us what you are planning.</h2>
-          <p>Share the basic information and our team will contact you to discuss the next step.</p>
+          <p>Share the basic information and send it to our team on WhatsApp. We will reply there to discuss the next step.</p>
           <div class="details">
             <a href="tel:+96171983272">
               <span class="detail-label">Phone / WhatsApp</span>
@@ -228,9 +228,7 @@
             </div>
           </div>
         </div>
-        <form class="form reveal" name="project-enquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html">
-          <input type="hidden" name="form-name" value="project-enquiry">
-          <p class="hp"><label>Do not fill this: <input name="bot-field"></label></p>
+        <form class="form reveal" id="enquiryForm" name="project-enquiry" data-whatsapp="96171983272" action="https://wa.me/96171983272" method="GET" target="_blank">
           <div class="form-row">
             <div class="field">
               <label for="name">Full name</label>
@@ -266,7 +264,8 @@
             <label for="message">Project details</label>
             <textarea id="message" name="message" rows="5" placeholder="Approximate area, required works, target timing and any useful details"></textarea>
           </div>
-          <button class="button button-gold" type="submit">Send project enquiry</button>
+          <button class="button button-gold" type="submit">Send on WhatsApp</button>
+          <p class="form-note" id="enquiryNote" role="status" aria-live="polite">Opens WhatsApp with your details filled in. Nothing is sent until you press send there.</p>
         </form>
       </div>
     </section>

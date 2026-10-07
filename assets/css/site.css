@@ -690,6 +690,13 @@ p { margin: 0; }
 
 .form .button { margin-top: 0.4rem; }
 
+.form-note {
+  margin: 0.9rem 0 0;
+  color: var(--limestone-muted);
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
 .footer {
   background: var(--bronze);
   color: var(--limestone-muted);
