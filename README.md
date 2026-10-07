@@ -1,6 +1,6 @@
 # S2D Contracting
 
-Interior design and turnkey contracting site for S2D Contracting in Beirut. Static HTML, CSS, and JavaScript. The enquiry form (`#enquiryForm`) opens WhatsApp with the visitor's details filled in, addressed to the number in its `data-whatsapp` attribute (`96171983272`). Nothing is stored on a server; the message is sent when the visitor presses send in WhatsApp. The handler is at the end of `assets/js/site.js`.
+Interior design and turnkey contracting site for S2D Contracting in Beirut. Static HTML, CSS, and JavaScript. The enquiry form (`#enquiryForm`) opens WhatsApp with the visitor's details filled in, addressed to the number in its `data-whatsapp` attribute (`96171557725`). Nothing is stored on a server; the message is sent when the visitor presses send in WhatsApp. The handler is at the end of `assets/js/site.js`.
 
 ## Run locally
 
