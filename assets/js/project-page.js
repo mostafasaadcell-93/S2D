@@ -296,7 +296,7 @@
   var nextTitle = document.createElement("h2");
   nextTitle.textContent = "Let’s create it together.";
   var nextLink = document.createElement("a");
-  nextLink.className = "button button-gold";
+  nextLink.className = "button button-primary";
   nextLink.href = "/#contact";
   nextLink.textContent = "Start your project";
   nextShell.appendChild(nextKicker);

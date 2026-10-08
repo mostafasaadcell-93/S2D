@@ -1,2 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://YOUR-DOMAIN.com/</loc></url></urlset>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://s2dcontracting.com/</loc></url>
+  <url><loc>https://s2dcontracting.com/project.html?project=villa-tyre</loc></url>
+  <url><loc>https://s2dcontracting.com/project.html?project=hazmieh-residences</loc></url>
+  <url><loc>https://s2dcontracting.com/project.html?project=mundos-food-court</loc></url>
+  <url><loc>https://s2dcontracting.com/project.html?project=villa-south-lebanon</loc></url>
+  <url><loc>https://s2dcontracting.com/project.html?project=achrafieh-airbnb-1133</loc></url>
+  <url><loc>https://s2dcontracting.com/project.html?project=mar-mikhael-1325</loc></url>
+  <url><loc>https://s2dcontracting.com/project.html?project=bliss-12</loc></url>
+  <url><loc>https://s2dcontracting.com/project.html?project=gemmayze-airbnb</loc></url>
+</urlset>
