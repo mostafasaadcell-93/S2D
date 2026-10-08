@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://s2dcontracting.com/</loc></url>
+  <url><loc>https://s2dcontracting.com/about.html</loc></url>
+  <url><loc>https://s2dcontracting.com/projects.html</loc></url>
+  <url><loc>https://s2dcontracting.com/services.html</loc></url>
+  <url><loc>https://s2dcontracting.com/contact.html</loc></url>
   <url><loc>https://s2dcontracting.com/project.html?project=villa-tyre</loc></url>
   <url><loc>https://s2dcontracting.com/project.html?project=hazmieh-residences</loc></url>
   <url><loc>https://s2dcontracting.com/project.html?project=mundos-food-court</loc></url>

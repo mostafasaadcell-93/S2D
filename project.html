@@ -5,64 +5,82 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Project | S2D Contracting</title>
   <meta name="description" content="S2D Contracting project portfolio.">
-  <meta name="theme-color" content="#0A1931">
+  <meta name="theme-color" content="#08121C">
+  <meta property="og:site_name" content="S2D Contracting">
+  <meta property="og:title" content="Project | S2D Contracting">
+  <meta property="og:description" content="S2D Contracting project portfolio.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://s2dcontracting.com/projects.html">
+  <meta property="og:image" content="https://s2dcontracting.com/assets/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://s2dcontracting.com/projects.html">
   <link rel="icon" href="/assets/images/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/site.css?v=navy1">
-  <script defer src="/assets/js/images.js?v=haz1"></script>
-  <script defer src="/assets/js/projects-data.js?v=haz1"></script>
-  <script defer src="/assets/js/site.js?v=navy1"></script>
-  <script defer src="/assets/js/project-page.js?v=navy1"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&amp;family=Montserrat:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/site.css?v=mock1">
+  <script defer src="/assets/js/images.js?v=mock1"></script>
+  <script defer src="/assets/js/projects-data.js?v=mock1"></script>
+  <script defer src="/assets/js/site.js?v=mock1"></script>
+  <script defer src="/assets/js/project-page.js?v=mock1"></script>
 </head>
 <body>
-  <a class="skip" href="#projectMain">Skip to content</a>
-  <header class="header" id="top">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
     <div class="shell header-bar">
       <a class="brand" href="/" aria-label="S2D Contracting home">
         <img src="/assets/images/logo.png" alt="S2D Contracting" width="1257" height="611">
       </a>
-      <button class="menu" type="button" aria-expanded="false" aria-controls="navlinks" aria-label="Open menu">
-        <span class="menu-lines" aria-hidden="true"></span>
-      </button>
-      <nav id="navlinks" class="navlinks" aria-label="Main navigation">
-        <a href="/#work">All projects</a>
-        <a href="/#contact">Contact</a>
-        <a class="button button-primary nav-cta" href="/#contact">Start a project</a>
+      <nav class="nav" id="nav" aria-label="Main navigation">
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/projects.html" aria-current="page">Projects</a>
+        <a href="/services.html">Services</a>
+        <a href="/contact.html">Contact</a>
+        <a class="btn btn-outline" href="/contact.html">Get in touch <span class="arrow" aria-hidden="true">→</span></a>
       </nav>
-      <a class="button button-primary header-cta" href="/#contact">Start a project</a>
+      <a class="btn btn-outline header-cta" href="/contact.html">Get in touch <span class="arrow" aria-hidden="true">→</span></a>
+      <button class="menu" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open menu"><span></span></button>
     </div>
   </header>
-  <main id="projectMain">
-    <section class="project-missing">
+  <main id="main" data-project-main>
+    <section class="not-found">
       <p>Loading project…</p>
     </section>
   </main>
-  <footer class="footer">
-    <div class="shell footer-inner">
-      <div>
-        <img src="/assets/images/logo.png" alt="S2D Contracting" width="1257" height="611">
-        <p>Interior design and turnkey contracting.</p>
+  <footer class="site-footer">
+    <div class="shell">
+      <div class="footer-line">
+        <a class="footer-brand" href="/" aria-label="S2D Contracting home">
+          <img src="/assets/images/logo.png" alt="S2D Contracting" width="1257" height="611" loading="lazy">
+        </a>
+        <span class="rule" aria-hidden="true"></span>
+        <p class="footer-motto caps">Design<b aria-hidden="true">·</b>Build<b aria-hidden="true">·</b>Furnish</p>
       </div>
-      <div>
-        <a href="#top">Back to top ↑</a>
-        <p>© <span id="year">2026</span> S2D Contracting.</p>
+      <div class="footer-meta">
+        <nav aria-label="Footer navigation">
+          <a href="/">Home</a>
+          <a href="/about.html">About</a>
+          <a href="/projects.html">Projects</a>
+          <a href="/services.html">Services</a>
+          <a href="/contact.html">Contact</a>
+        </nav>
+        <p>© <span id="year">2026</span> S2D Contracting · Beirut, Lebanon</p>
       </div>
     </div>
   </footer>
+  <a class="contact-fab" href="https://wa.me/96171557725?text=Hello%20S2D%20Contracting%2C%20I%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener" aria-label="Contact us on WhatsApp">
+    <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M1.8 2.6h12.4v7.4H6.1L2.8 13.1V10H1.8V2.6Z" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
+    <span>WhatsApp</span>
+  </a>
   <div class="lightbox" aria-hidden="true">
-    <button class="lightbox-close" type="button" aria-label="Close image">×</button>
+    <button class="lightbox-close" type="button" aria-label="Close">×</button>
     <div>
       <img alt="">
       <p></p>
     </div>
   </div>
-  <a class="contact-fab" href="https://wa.me/96171557725?text=Hello%20S2D%20Contracting%2C%20I%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener" aria-label="Contact Us on WhatsApp">
-    <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
-      <path d="M1.8 2.6h12.4v7.4H6.1L2.8 13.1V10H1.8V2.6Z" fill="none" stroke="currentColor" stroke-width="1.2"/>
-    </svg>
-    <span>Contact Us</span>
-  </a>
 </body>
 </html>

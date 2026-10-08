@@ -1,7 +1,7 @@
 /**
  * Project copy. Media lives in assets/js/images.js and is referenced by id.
- * Homepage order follows this array. Cards with "wide": true span the full row;
- * keep an even number of non-wide cards between wide ones so no card sits alone.
+ * The Projects page lists projects in this order. The first one is the large featured card;
+ * an odd card left at the end of the grid spans the full row, so give that slot a landscape cover.
  */
 window.S2D_PROJECTS = [
   {
@@ -29,8 +29,7 @@ window.S2D_PROJECTS = [
       "villa-tyre-14",
       "villa-tyre-15",
       "villa-tyre-16"
-    ],
-    "wide": true
+    ]
   },
   {
     "slug": "hazmieh-residences",
@@ -49,8 +48,7 @@ window.S2D_PROJECTS = [
       "hazmieh-residences-06",
       "hazmieh-residences-07",
       "hazmieh-residences-08"
-    ],
-    "wide": false
+    ]
   },
   {
     "slug": "mundos-food-court",
@@ -74,8 +72,75 @@ window.S2D_PROJECTS = [
       "mundos-food-court-11",
       "mundos-food-court-12",
       "mundos-food-court-13"
-    ],
-    "wide": false
+    ]
+  },
+  {
+    "slug": "achrafieh-airbnb-1133",
+    "title": "Achrafieh Apartment 1133",
+    "category": "Short-Stay Apartment · Fit-Out",
+    "description": "A short-stay apartment in Achrafieh designed for guests and built for the owner: warm timber, rattan lighting, botanical feature walls, a fitted kitchen and a rooftop lounge with a terrace jacuzzi.",
+    "scope": "Interior design, fit-out, joinery and furnishing",
+    "location": "Achrafieh, Beirut",
+    "coverId": "achrafieh-airbnb-1133-01",
+    "galleryIds": [
+      "achrafieh-airbnb-1133-01",
+      "achrafieh-airbnb-1133-02",
+      "achrafieh-airbnb-1133-03",
+      "achrafieh-airbnb-1133-04",
+      "achrafieh-airbnb-1133-05",
+      "achrafieh-airbnb-1133-06",
+      "achrafieh-airbnb-1133-07"
+    ]
+  },
+  {
+    "slug": "mar-mikhael-1325",
+    "title": "Mar Mikhael Apartment 1325",
+    "category": "Short-Stay Apartment · Turnkey",
+    "description": "A compact apartment in Mar Mikhael delivered as a turnkey short-stay unit, with a backlit marble breakfast bar, a slatted media wall, layered lighting and a stone-look shower room.",
+    "scope": "Interior design, renovation, joinery and turnkey furnishing",
+    "location": "Mar Mikhael, Beirut",
+    "coverId": "mar-mikhael-1325-01",
+    "galleryIds": [
+      "mar-mikhael-1325-01",
+      "mar-mikhael-1325-02",
+      "mar-mikhael-1325-03",
+      "mar-mikhael-1325-04",
+      "mar-mikhael-1325-05",
+      "mar-mikhael-1325-06",
+      "mar-mikhael-1325-07"
+    ]
+  },
+  {
+    "slug": "bliss-12",
+    "title": "Bliss 12",
+    "category": "Interior Design · Sea-View Apartment",
+    "description": "A sea-view apartment designed around its long window line. The 3D visualizations show the interior design developed for the space; the site photos show the apartment on site.",
+    "scope": "Interior design and 3D visualization",
+    "location": "Lebanon",
+    "coverId": "bliss-12-03",
+    "galleryIds": [
+      "bliss-12-01",
+      "bliss-12-02",
+      "bliss-12-03",
+      "bliss-12-04",
+      "bliss-12-05",
+      "bliss-12-06",
+      "bliss-12-07",
+      "bliss-12-08",
+      "bliss-12-09"
+    ]
+  },
+  {
+    "slug": "gemmayze-airbnb",
+    "title": "Gemmayze Apartment",
+    "category": "Short-Stay Apartment · Fit-Out",
+    "description": "A short-stay apartment in Gemmayze, shown in a walkthrough of the finished interior.",
+    "scope": "Interior fit-out and furnishing",
+    "location": "Gemmayze, Beirut",
+    "coverId": "gemmayze-airbnb-01",
+    "galleryIds": [
+      "gemmayze-airbnb-01"
+    ]
   },
   {
     "slug": "villa-south-lebanon",
@@ -99,79 +164,6 @@ window.S2D_PROJECTS = [
       "villa-south-lebanon-11",
       "villa-south-lebanon-12",
       "villa-south-lebanon-13"
-    ],
-    "wide": true
-  },
-  {
-    "slug": "achrafieh-airbnb-1133",
-    "title": "Achrafieh Apartment 1133",
-    "category": "Short-Stay Apartment · Fit-Out",
-    "description": "A short-stay apartment in Achrafieh designed for guests and built for the owner: warm timber, rattan lighting, botanical feature walls, a fitted kitchen and a rooftop lounge with a terrace jacuzzi.",
-    "scope": "Interior design, fit-out, joinery and furnishing",
-    "location": "Achrafieh, Beirut",
-    "coverId": "achrafieh-airbnb-1133-01",
-    "galleryIds": [
-      "achrafieh-airbnb-1133-01",
-      "achrafieh-airbnb-1133-02",
-      "achrafieh-airbnb-1133-03",
-      "achrafieh-airbnb-1133-04",
-      "achrafieh-airbnb-1133-05",
-      "achrafieh-airbnb-1133-06",
-      "achrafieh-airbnb-1133-07"
-    ],
-    "wide": false
-  },
-  {
-    "slug": "mar-mikhael-1325",
-    "title": "Mar Mikhael Apartment 1325",
-    "category": "Short-Stay Apartment · Turnkey",
-    "description": "A compact apartment in Mar Mikhael delivered as a turnkey short-stay unit, with a backlit marble breakfast bar, a slatted media wall, layered lighting and a stone-look shower room.",
-    "scope": "Interior design, renovation, joinery and turnkey furnishing",
-    "location": "Mar Mikhael, Beirut",
-    "coverId": "mar-mikhael-1325-01",
-    "galleryIds": [
-      "mar-mikhael-1325-01",
-      "mar-mikhael-1325-02",
-      "mar-mikhael-1325-03",
-      "mar-mikhael-1325-04",
-      "mar-mikhael-1325-05",
-      "mar-mikhael-1325-06",
-      "mar-mikhael-1325-07"
-    ],
-    "wide": false
-  },
-  {
-    "slug": "bliss-12",
-    "title": "Bliss 12",
-    "category": "Interior Design · Sea-View Apartment",
-    "description": "A sea-view apartment designed around its long window line. The 3D visualizations show the interior design developed for the space; the site photos show the apartment on site.",
-    "scope": "Interior design and 3D visualization",
-    "location": "Lebanon",
-    "coverId": "bliss-12-03",
-    "galleryIds": [
-      "bliss-12-01",
-      "bliss-12-02",
-      "bliss-12-03",
-      "bliss-12-04",
-      "bliss-12-05",
-      "bliss-12-06",
-      "bliss-12-07",
-      "bliss-12-08",
-      "bliss-12-09"
-    ],
-    "wide": false
-  },
-  {
-    "slug": "gemmayze-airbnb",
-    "title": "Gemmayze Apartment",
-    "category": "Short-Stay Apartment · Fit-Out",
-    "description": "A short-stay apartment in Gemmayze, shown in a walkthrough of the finished interior.",
-    "scope": "Interior fit-out and furnishing",
-    "location": "Gemmayze, Beirut",
-    "coverId": "gemmayze-airbnb-01",
-    "galleryIds": [
-      "gemmayze-airbnb-01"
-    ],
-    "wide": false
+    ]
   }
 ];
