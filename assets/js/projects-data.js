@@ -1,6 +1,7 @@
 /**
  * Project copy. Media lives in assets/js/images.js and is referenced by id.
- * Homepage order follows this array. Every card at index 0, 3, 6 ... is shown wide.
+ * Homepage order follows this array. Cards with "wide": true span the full row;
+ * keep an even number of non-wide cards between wide ones so no card sits alone.
  */
 window.S2D_PROJECTS = [
   {
@@ -28,7 +29,28 @@ window.S2D_PROJECTS = [
       "villa-tyre-14",
       "villa-tyre-15",
       "villa-tyre-16"
-    ]
+    ],
+    "wide": true
+  },
+  {
+    "slug": "hazmieh-residences",
+    "title": "Hazmieh Luxury Residences",
+    "category": "Residential · Design & Contracting",
+    "description": "A boutique residential building in Hazmieh, designed around warm timber screens, deep terraces and an infinity pool overlooking the hills. The 3D walkthrough shows the design S2D developed for the project, from the double-height lobby and residents' gym to the living spaces and sunset terraces.",
+    "scope": "Architectural design, interior design and 3D visualization",
+    "location": "Hazmieh, Lebanon",
+    "coverId": "hazmieh-residences-01",
+    "galleryIds": [
+      "hazmieh-residences-01",
+      "hazmieh-residences-02",
+      "hazmieh-residences-03",
+      "hazmieh-residences-04",
+      "hazmieh-residences-05",
+      "hazmieh-residences-06",
+      "hazmieh-residences-07",
+      "hazmieh-residences-08"
+    ],
+    "wide": false
   },
   {
     "slug": "mundos-food-court",
@@ -52,25 +74,8 @@ window.S2D_PROJECTS = [
       "mundos-food-court-11",
       "mundos-food-court-12",
       "mundos-food-court-13"
-    ]
-  },
-  {
-    "slug": "achrafieh-airbnb-1133",
-    "title": "Achrafieh Apartment 1133",
-    "category": "Short-Stay Apartment · Fit-Out",
-    "description": "A short-stay apartment in Achrafieh designed for guests and built for the owner: warm timber, rattan lighting, botanical feature walls, a fitted kitchen and a rooftop lounge with a terrace jacuzzi.",
-    "scope": "Interior design, fit-out, joinery and furnishing",
-    "location": "Achrafieh, Beirut",
-    "coverId": "achrafieh-airbnb-1133-01",
-    "galleryIds": [
-      "achrafieh-airbnb-1133-01",
-      "achrafieh-airbnb-1133-02",
-      "achrafieh-airbnb-1133-03",
-      "achrafieh-airbnb-1133-04",
-      "achrafieh-airbnb-1133-05",
-      "achrafieh-airbnb-1133-06",
-      "achrafieh-airbnb-1133-07"
-    ]
+    ],
+    "wide": false
   },
   {
     "slug": "villa-south-lebanon",
@@ -94,7 +99,27 @@ window.S2D_PROJECTS = [
       "villa-south-lebanon-11",
       "villa-south-lebanon-12",
       "villa-south-lebanon-13"
-    ]
+    ],
+    "wide": true
+  },
+  {
+    "slug": "achrafieh-airbnb-1133",
+    "title": "Achrafieh Apartment 1133",
+    "category": "Short-Stay Apartment · Fit-Out",
+    "description": "A short-stay apartment in Achrafieh designed for guests and built for the owner: warm timber, rattan lighting, botanical feature walls, a fitted kitchen and a rooftop lounge with a terrace jacuzzi.",
+    "scope": "Interior design, fit-out, joinery and furnishing",
+    "location": "Achrafieh, Beirut",
+    "coverId": "achrafieh-airbnb-1133-01",
+    "galleryIds": [
+      "achrafieh-airbnb-1133-01",
+      "achrafieh-airbnb-1133-02",
+      "achrafieh-airbnb-1133-03",
+      "achrafieh-airbnb-1133-04",
+      "achrafieh-airbnb-1133-05",
+      "achrafieh-airbnb-1133-06",
+      "achrafieh-airbnb-1133-07"
+    ],
+    "wide": false
   },
   {
     "slug": "mar-mikhael-1325",
@@ -112,7 +137,29 @@ window.S2D_PROJECTS = [
       "mar-mikhael-1325-05",
       "mar-mikhael-1325-06",
       "mar-mikhael-1325-07"
-    ]
+    ],
+    "wide": false
+  },
+  {
+    "slug": "bliss-12",
+    "title": "Bliss 12",
+    "category": "Interior Design · Sea-View Apartment",
+    "description": "A sea-view apartment designed around its long window line. The 3D visualizations show the interior design developed for the space; the site photos show the apartment on site.",
+    "scope": "Interior design and 3D visualization",
+    "location": "Lebanon",
+    "coverId": "bliss-12-03",
+    "galleryIds": [
+      "bliss-12-01",
+      "bliss-12-02",
+      "bliss-12-03",
+      "bliss-12-04",
+      "bliss-12-05",
+      "bliss-12-06",
+      "bliss-12-07",
+      "bliss-12-08",
+      "bliss-12-09"
+    ],
+    "wide": false
   },
   {
     "slug": "gemmayze-airbnb",
@@ -124,26 +171,7 @@ window.S2D_PROJECTS = [
     "coverId": "gemmayze-airbnb-01",
     "galleryIds": [
       "gemmayze-airbnb-01"
-    ]
-  },
-  {
-    "slug": "bliss-12",
-    "title": "Bliss 12",
-    "category": "Interior Design · Sea-View Apartment",
-    "description": "A sea-view apartment designed around its long window line. The 3D visualizations show the interior design developed for the space; the site photos show the apartment on site.",
-    "scope": "Interior design and 3D visualization",
-    "location": "Lebanon",
-    "coverId": "bliss-12-01",
-    "galleryIds": [
-      "bliss-12-01",
-      "bliss-12-02",
-      "bliss-12-03",
-      "bliss-12-04",
-      "bliss-12-05",
-      "bliss-12-06",
-      "bliss-12-07",
-      "bliss-12-08",
-      "bliss-12-09"
-    ]
+    ],
+    "wide": false
   }
 ];

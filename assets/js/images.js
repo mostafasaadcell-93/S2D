@@ -834,6 +834,103 @@
     "focal": "center center",
     "tag": "On site",
     "priority": "auto"
+  },
+  "hazmieh-residences-01": {
+    "id": "hazmieh-residences-01",
+    "type": "image",
+    "src": "/assets/media/hazmieh-residences/01.webp",
+    "alt": "3D visualization: Hazmieh Luxury Residences facade at sunset with timber screens and terraces",
+    "width": 720,
+    "height": 960,
+    "ratio": "3 / 4",
+    "focal": "center 35%",
+    "tag": "3D visualization",
+    "priority": "auto"
+  },
+  "hazmieh-residences-02": {
+    "id": "hazmieh-residences-02",
+    "type": "video",
+    "src": "/assets/media/hazmieh-residences/02.mp4",
+    "poster": "/assets/media/hazmieh-residences/02-poster.webp",
+    "alt": "Hazmieh Luxury Residences 3D walkthrough video",
+    "width": 720,
+    "height": 1280,
+    "ratio": "9 / 16",
+    "focal": "center center",
+    "tag": "3D walkthrough video",
+    "priority": "auto"
+  },
+  "hazmieh-residences-03": {
+    "id": "hazmieh-residences-03",
+    "type": "image",
+    "src": "/assets/media/hazmieh-residences/03.webp",
+    "alt": "3D visualization: infinity pool beside the building",
+    "width": 720,
+    "height": 960,
+    "ratio": "3 / 4",
+    "focal": "center center",
+    "tag": "3D visualization",
+    "priority": "auto"
+  },
+  "hazmieh-residences-04": {
+    "id": "hazmieh-residences-04",
+    "type": "image",
+    "src": "/assets/media/hazmieh-residences/04.webp",
+    "alt": "3D visualization: double-height lobby with timber walls",
+    "width": 720,
+    "height": 960,
+    "ratio": "3 / 4",
+    "focal": "center center",
+    "tag": "3D visualization",
+    "priority": "auto"
+  },
+  "hazmieh-residences-05": {
+    "id": "hazmieh-residences-05",
+    "type": "image",
+    "src": "/assets/media/hazmieh-residences/05.webp",
+    "alt": "3D visualization: residents' gym facing the view",
+    "width": 720,
+    "height": 960,
+    "ratio": "3 / 4",
+    "focal": "center center",
+    "tag": "3D visualization",
+    "priority": "auto"
+  },
+  "hazmieh-residences-06": {
+    "id": "hazmieh-residences-06",
+    "type": "image",
+    "src": "/assets/media/hazmieh-residences/06.webp",
+    "alt": "3D visualization: living room opening onto the terrace at sunset",
+    "width": 720,
+    "height": 960,
+    "ratio": "3 / 4",
+    "focal": "center center",
+    "tag": "3D visualization",
+    "priority": "auto"
+  },
+  "hazmieh-residences-07": {
+    "id": "hazmieh-residences-07",
+    "type": "image",
+    "src": "/assets/media/hazmieh-residences/07.webp",
+    "alt": "3D visualization: covered terrace with dining area and pergola",
+    "width": 720,
+    "height": 960,
+    "ratio": "3 / 4",
+    "focal": "center center",
+    "tag": "3D visualization",
+    "priority": "auto"
+  },
+  "hazmieh-residences-08": {
+    "id": "hazmieh-residences-08",
+    "type": "image",
+    "src": "/assets/media/hazmieh-residences/08.webp",
+    "alt": "3D visualization: the residences lit at night above the pool",
+    "width": 720,
+    "height": 395,
+    "ratio": "720 / 395",
+    "focal": "center center",
+    "tag": "3D visualization",
+    "priority": "auto"
   }
 };
 

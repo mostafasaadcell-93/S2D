@@ -179,7 +179,7 @@
     var fallback = gallery.querySelector(".project-fallback");
     projects.forEach(function (project, index) {
       var image = window.S2D.image(project.coverId);
-      var wide = index % 3 === 0;
+      var wide = typeof project.wide === "boolean" ? project.wide : index % 3 === 0;
       var link = document.createElement("a");
       link.className = "project" + (wide ? " wide" : "");
       link.href = "/project.html?project=" + encodeURIComponent(project.slug);
