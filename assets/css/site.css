@@ -1086,3 +1086,19 @@ body.menu-open .site-header {
   .site-header .nav.is-open a[aria-current="page"] { color: var(--gold); }
   .site-header .nav.is-open .btn { display: inline-flex; }
 }
+
+/* Align Contact closing banner with the site's shared content grid. */
+.client-contact-page .shell.client-contact-final-inner {
+  width: min(var(--shell), calc(100% - 2 * var(--gutter)));
+  margin-inline: auto;
+  padding-block: 5rem;
+}
+.client-contact-page .client-contact-final-inner > .label,
+.client-contact-page .client-contact-final-inner > h2,
+.client-contact-page .client-contact-final-inner > .copy,
+.client-contact-page .client-contact-final-inner > .btn {
+  max-width: min(100%, 480px);
+}
+@media (max-width: 760px) {
+  .client-contact-page .shell.client-contact-final-inner { padding-block: 4rem; }
+}
