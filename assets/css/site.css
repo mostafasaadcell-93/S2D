@@ -1046,3 +1046,43 @@ body.menu-open .site-header {
   .client-contact-page .client-contact-hero-copy { width: 100%; max-width: 520px; }
   .client-contact-page .client-contact-hero h1 { font-size: clamp(2.8rem, 10vw, 4.2rem); }
 }
+
+/* Mobile navigation: keep the menu panel visible below the fixed header on iOS Safari.
+   A fixed descendant of a backdrop-filtered header can be incorrectly positioned. */
+@media (max-width: 1023px) {
+  .site-header { isolation: isolate; }
+  .site-header .header-bar { position: relative; z-index: 2; }
+  .site-header .menu { z-index: 3; flex-shrink: 0; }
+  .site-header .nav.is-open {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    width: 100%;
+    height: calc(100vh - var(--header-h));
+    height: calc(100dvh - var(--header-h));
+    max-height: calc(100vh - var(--header-h));
+    max-height: calc(100dvh - var(--header-h));
+    z-index: 2;
+    margin: 0;
+    padding: 1.5rem max(var(--gutter), env(safe-area-inset-left)) calc(2rem + env(safe-area-inset-bottom));
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    background: #08121c;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+  .site-header .nav.is-open a:not(.btn) {
+    display: block;
+    width: 100%;
+    color: var(--cream);
+    opacity: 1;
+    visibility: visible;
+  }
+  .site-header .nav.is-open a[aria-current="page"] { color: var(--gold); }
+  .site-header .nav.is-open .btn { display: inline-flex; }
+}
