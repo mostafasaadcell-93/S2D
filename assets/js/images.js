@@ -12,6 +12,7 @@
  */
 (function (global) {
   var byId = {
+  "client-about-building": {"id":"client-about-building","type":"image","src":"/assets/media/client-2026/about-building.webp","alt":"Illuminated residential architecture at dusk","width":1229,"height":1536,"ratio":"4 / 5","focal":"center center","priority":"high"},
   "hero": {
     "id": "hero",
     "type": "video",
