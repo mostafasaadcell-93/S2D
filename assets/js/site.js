@@ -122,6 +122,26 @@
       source.addEventListener("error", usePoster);
       el.prepend(video);
       el.dataset.mounted = "true";
+      // Some browsers do not start dynamically inserted videos from autoplay
+      // alone. Request playback explicitly once mounted and after returning
+      // to a visible tab. Keep the poster while the video buffers.
+      function startPlayback() {
+        if (fellBack || !video.isConnected || document.hidden) return;
+        var attempt = video.play();
+        if (attempt && typeof attempt.catch === "function") {
+          attempt.catch(function () {
+            // Autoplay can be restricted by browser settings; retain poster.
+          });
+        }
+      }
+      video.addEventListener("canplay", startPlayback);
+      document.addEventListener("visibilitychange", startPlayback);
+      window.addEventListener("pageshow", startPlayback);
+      video.addEventListener("error", function () {
+        document.removeEventListener("visibilitychange", startPlayback);
+        window.removeEventListener("pageshow", startPlayback);
+      }, { once: true });
+      startPlayback();
       return;
     }
     var img = document.createElement("img");
