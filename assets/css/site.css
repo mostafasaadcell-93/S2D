@@ -973,3 +973,76 @@ body.menu-open .site-header {
 @media(min-width:960px) { .about-quality-hero .media-cover { left:42%; } .about-quality-hero .page-hero-inner { padding-right: min(52%, 35rem); } }
 @media(max-width:959px) { .client-contact-hero-copy { width:min(95%, 540px); } .client-contact-hero-photo { inset:0 0 0 28%; } .client-contact-hero::after { background:linear-gradient(90deg,#08121c 0%,rgba(8,18,28,.91) 48%,rgba(8,18,28,.2)); } .client-contact-hero h1 { font-size:clamp(2.75rem,5.8vw,4rem); } }
 @media(max-width:760px) { .client-contact-hero { height:auto; min-height:680px; align-items:flex-end; } .client-contact-hero-photo { inset:0; background-position:center; } .client-contact-hero-photo::after { background-size:auto 100%; background-position:center; } .client-contact-hero::after { background:linear-gradient(0deg,#08121c 2%,rgba(8,18,28,.96) 31%,rgba(8,18,28,.27) 100%); } .client-contact-hero-inner { padding-top: 21rem; padding-bottom: 3.5rem; } .client-contact-hero-copy { width:100%; } .client-contact-hero h1 { font-size:clamp(2.65rem,10vw,4.2rem); margin:.8rem 0 1.3rem; } .about-quality-hero .page-hero-inner { padding-right:0; } }
+
+/* Contact hero correction — one photograph, no duplicated background layers.
+   Matches the client's navy-left / architecture-right reference. */
+.client-contact-page .client-contact-hero {
+  min-height: 550px;
+  height: clamp(550px, 58vw, 610px);
+  max-height: none;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.client-contact-page .client-contact-hero-photo {
+  position: absolute;
+  inset: 0 0 0 43%;
+  background-image: url('/assets/media/client-2026/contact-arches.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 52%;
+}
+.client-contact-page .client-contact-hero-photo::after { content: none; display: none; }
+.client-contact-page .client-contact-hero::after {
+  background: linear-gradient(90deg,
+    #08121c 0%, #08121c 24%,
+    rgba(8,18,28,.98) 36%,
+    rgba(8,18,28,.78) 45%,
+    rgba(8,18,28,.1) 62%,
+    rgba(8,18,28,0) 80%);
+}
+.client-contact-page .shell.client-contact-hero-inner {
+  width: min(var(--shell), calc(100% - 2 * var(--gutter)));
+  margin-inline: auto;
+  padding: calc(var(--header-h) + 1rem) 0 1.5rem;
+  box-sizing: border-box;
+  align-self: center;
+  position: relative;
+  z-index: 1;
+}
+.client-contact-page .client-contact-hero-copy {
+  width: min(43%, 480px);
+  max-width: 480px;
+}
+.client-contact-page .client-contact-hero h1 {
+  font-size: clamp(3.3rem, 4.35vw, 4.7rem);
+  line-height: 1.015;
+  margin: 1rem 0 1.3rem;
+  max-width: none;
+}
+.client-contact-page .client-contact-hero .lead {
+  max-width: 340px;
+  font-size: clamp(.83rem, 1vw, 1.05rem);
+  line-height: 1.6;
+}
+.client-contact-page .client-contact-small { margin-top: 2.25rem; }
+@media (max-width: 959px) {
+  .client-contact-page .client-contact-hero-photo { inset: 0 0 0 34%; }
+  .client-contact-page .client-contact-hero-copy { width: min(57%, 470px); max-width: 470px; }
+  .client-contact-page .client-contact-hero h1 { font-size: clamp(2.6rem, 5.4vw, 3.8rem); }
+}
+@media (max-width: 760px) {
+  .client-contact-page .client-contact-hero { min-height: 660px; height: auto; align-items: flex-end; }
+  .client-contact-page .client-contact-hero-photo { inset: 0; background-position: center 49%; }
+  .client-contact-page .client-contact-hero::after {
+    background: linear-gradient(0deg, #08121c 0%, rgba(8,18,28,.96) 26%,
+      rgba(8,18,28,.62) 57%, rgba(8,18,28,.12) 100%);
+  }
+  .client-contact-page .shell.client-contact-hero-inner {
+    width: min(var(--shell), calc(100% - 2 * var(--gutter)));
+    padding: 24rem 0 3rem;
+  }
+  .client-contact-page .client-contact-hero-copy { width: 100%; max-width: 520px; }
+  .client-contact-page .client-contact-hero h1 { font-size: clamp(2.8rem, 10vw, 4.2rem); }
+}
