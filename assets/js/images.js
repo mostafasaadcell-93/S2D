@@ -15,14 +15,13 @@
   "client-about-building": {"id":"client-about-building","type":"image","src":"/assets/media/client-2026/about-building.webp","alt":"Illuminated residential architecture at dusk","width":1229,"height":1536,"ratio":"4 / 5","focal":"center center","priority":"high"},
   "hero": {
     "id": "hero",
-    "type": "video",
-    "src": "/assets/media/hero.mp4",
-    "poster": "/assets/media/hero-poster.webp",
-    "alt": "S2D Contracting cinematic hero video",
-    "width": 1280,
-    "height": 720,
-    "ratio": "16 / 9",
-    "focal": "center center",
+    "type": "image",
+    "src": "/assets/media/client-2026/projects-residence.webp",
+    "alt": "Illuminated villa and blue pool overlooking the hills at night",
+    "width": 941,
+    "height": 1672,
+    "ratio": "941 / 1672",
+    "focal": "center 64%",
     "tag": "",
     "priority": "high"
   },
@@ -835,6 +834,18 @@
     "focal": "center center",
     "tag": "On site",
     "priority": "auto"
+  },
+  "hazmieh-residences-facade": {
+    "id": "hazmieh-residences-facade",
+    "type": "image",
+    "src": "/assets/media/client-2026/about-building.webp",
+    "alt": "Hazmieh Luxury Residences, stone facade with lit terraces at dusk",
+    "width": 1229,
+    "height": 1536,
+    "ratio": "1229 / 1536",
+    "focal": "center center",
+    "tag": "3D visualization",
+    "priority": "high"
   },
   "hazmieh-residences-01": {
     "id": "hazmieh-residences-01",
