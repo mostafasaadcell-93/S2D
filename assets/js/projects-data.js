@@ -38,8 +38,10 @@ window.S2D_PROJECTS = [
     "description": "A boutique residential building in Hazmieh, designed around warm timber screens, deep terraces and an infinity pool overlooking the hills. The 3D walkthrough shows the design S2D developed for the project, from the double-height lobby and residents' gym to the living spaces and sunset terraces.",
     "scope": "Architectural design, interior design and 3D visualization",
     "location": "Hazmieh, Lebanon",
-    "coverId": "hazmieh-residences-01",
+    "heroFit": "panel",
+    "coverId": "hazmieh-residences-facade",
     "galleryIds": [
+      "hazmieh-residences-facade",
       "hazmieh-residences-01",
       "hazmieh-residences-02",
       "hazmieh-residences-03",

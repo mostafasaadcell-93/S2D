@@ -54,6 +54,7 @@
   if (heroImage && window.S2D.mountImage) {
     window.S2D.mountImage(heroMedia, heroImage, { still: true, eager: true, decorative: true });
   }
+  if (project.heroFit === "panel") hero.classList.add("is-portrait");
   var heroInner = el("div", "shell hero-inner");
   var back = el("a", "back-link");
   back.href = "/projects.html";

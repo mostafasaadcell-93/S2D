@@ -351,6 +351,7 @@ body.menu-open .site-header {
 .hero .media-cover { z-index: 0; }
 .hero-inner { position: relative; z-index: 1; }
 .hero h1 { max-width: 11em; margin-bottom: 1.5rem; }
+.hero.has-pillars h1 { font-size: clamp(2.2rem, 4.6vw, 4rem); }
 .hero .lead { margin-bottom: 2.5rem; }
 .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1.5rem 2.25rem; }
 .hero-place {
@@ -808,6 +809,31 @@ body.menu-open .site-header {
 
 .project-hero { min-height: min(52rem, 100svh); align-items: flex-end; padding-bottom: 4.5rem; }
 .project-hero h1 { max-width: 12em; }
+@media (min-width: 960px) {
+  .project-hero.is-portrait .media-cover {
+    left: auto;
+    right: 0;
+    width: min(46vw, 38rem);
+  }
+  .project-hero.is-portrait .media-cover img {
+    object-fit: contain;
+    object-position: center center;
+  }
+  .project-hero.is-portrait .shade-left::after {
+    background: linear-gradient(180deg, rgba(var(--shade), 0.45) 0%, transparent 18%, transparent 84%, rgba(var(--shade), 0.35) 100%);
+  }
+  .project-hero.is-portrait .shell.hero-inner {
+    width: min(40rem, calc(100vw - min(46vw, 38rem) - 3rem));
+    margin-left: var(--gutter);
+    margin-right: auto;
+  }
+  .project-hero.is-portrait h1 { max-width: 9em; }
+}
+@media (max-width: 959px) {
+  .project-hero.is-portrait .shade-left::after {
+    background: linear-gradient(180deg, rgba(var(--shade), 0.5) 0%, rgba(var(--shade), 0.12) 32%, rgba(var(--shade), 0.2) 58%, rgba(var(--shade), 0.88) 100%);
+  }
+}
 .back-link {
   display: flex;
   width: max-content;
