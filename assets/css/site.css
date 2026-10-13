@@ -1062,6 +1062,71 @@ body.menu-open .site-header {
 .client-villa-true-photo::before { content:''; position:absolute; inset:0; background:url('/assets/media/client-2026/projects-residence-focus.webp') center / cover no-repeat; filter:blur(12px) brightness(.6); transform:scale(1.04); }
 .client-villa-true-photo img { position:relative; object-fit:contain; object-position:center; }
 .about-quality-hero .media-cover { background:#08121c; }
+@media (min-width: 760px) {
+  .about-quality-hero .page-hero-inner { display: flex; flex-direction: column; align-items: flex-start; }
+  .about-quality-hero .about-hero-lead { display: contents; }
+  .about-quality-hero .copy { order: 3; }
+  .about-quality-hero .link-arrow { order: 4; }
+}
+@media (max-width: 759px) {
+  .about-quality-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: 78svh auto;
+    min-height: 0;
+    height: auto;
+    padding-top: 0;
+    overflow: visible;
+  }
+  .about-quality-hero .media-cover {
+    position: relative;
+    inset: auto;
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+    height: auto;
+    min-height: 78svh;
+  }
+  .about-quality-hero .media-cover video,
+  .about-quality-hero .media-cover img {
+    object-fit: cover;
+    object-position: center 36%;
+    transform: scale(1.75);
+    transform-origin: center 36%;
+  }
+  .about-quality-hero .shade-left::after {
+    background: linear-gradient(180deg, rgba(var(--shade), 0.4) 0%, rgba(var(--shade), 0.08) 14%, transparent 30%);
+  }
+  .about-quality-hero .page-hero-inner { display: contents; }
+  .about-quality-hero .about-hero-lead {
+    grid-column: 1;
+    grid-row: 1;
+    align-self: end;
+    justify-self: stretch;
+    z-index: 2;
+    width: 100%;
+    padding: 3.6rem 24px 1.45rem;
+    background: linear-gradient(180deg, rgba(8, 18, 28, 0) 0%, rgba(8, 18, 28, 0.3) 32%, rgba(8, 18, 28, 0.9) 64%, #08121c 84%, #08121c 100%);
+  }
+  .about-quality-hero .about-hero-lead .label { margin-bottom: 0.5rem; }
+  .about-quality-hero h1 {
+    max-width: none;
+    margin-bottom: 0.8rem;
+    font-size: clamp(2rem, 8.2vw, 2.375rem);
+    line-height: 1.02;
+  }
+  .about-quality-hero .link-arrow { margin-top: 0; }
+  .about-quality-hero .copy {
+    grid-column: 1;
+    grid-row: 2;
+    max-width: none;
+    margin: 0;
+    padding: 1.7rem 24px 2.15rem;
+    color: var(--text);
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+}
 .about-quality-hero .media-cover img { object-position: center 40%; }
 @media(min-width:960px) { .about-quality-hero .media-cover { left:42%; } .about-quality-hero .page-hero-inner { padding-right: min(52%, 35rem); } }
 @media(max-width:959px) { .client-contact-hero-copy { width:min(95%, 540px); } .client-contact-hero-photo { inset:0 0 0 28%; } .client-contact-hero::after { background:linear-gradient(90deg,#08121c 0%,rgba(8,18,28,.91) 48%,rgba(8,18,28,.2)); } .client-contact-hero h1 { font-size:clamp(2.75rem,5.8vw,4rem); } }
