@@ -12,7 +12,7 @@
  */
 (function (global) {
   var byId = {
-  "client-about-building": {"id":"client-about-building","type":"image","src":"/assets/media/client-2026/about-building.webp","alt":"Illuminated residential architecture at dusk","width":1229,"height":1536,"ratio":"4 / 5","focal":"center center","priority":"high"},
+  "client-about-building": {"id":"client-about-building","type":"video","src":"/assets/media/VID_20261012_040639_758.mp4","poster":"/assets/media/client-2026/about-building.webp","alt":"Illuminated residential architecture at dusk","width":1080,"height":1920,"ratio":"9 / 16","focal":"center 45%","priority":"high"},
   "hero": {
     "id": "hero",
     "type": "image",
