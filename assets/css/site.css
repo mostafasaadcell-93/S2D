@@ -22,7 +22,7 @@
 
   --shell: 76rem;
   --gutter: clamp(1rem, 4vw, 2.5rem);
-  --header-h: 5rem;
+  --header-h: 5.75rem;
   --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
   color-scheme: dark;
 }
@@ -217,8 +217,12 @@ body.menu-open .site-header {
   min-height: var(--header-h);
 }
 
-.brand img { width: auto; height: 3.4rem; }
-@media (min-width: 1024px) { .brand img { height: 3.9rem; } }
+.brand { display: inline-flex; align-items: center; flex: 0 0 auto; line-height: 0; }
+.brand img { width: auto; height: 4.9rem; max-width: min(58vw, 13rem); object-fit: contain; }
+@media (min-width: 1024px) {
+  :root { --header-h: 6.6rem; }
+  .brand img { height: 5.85rem; max-width: none; }
+}
 
 .nav { display: none; }
 
@@ -451,9 +455,6 @@ body.menu-open .site-header {
 /* Homepage hero, phones only. Matches the mobile reference: compact type,
    stacked actions, and the villa kept bright behind the copy. */
 @media (max-width: 719px) {
-  body:has(.hero.has-pillars) { --header-h: 3.75rem; }
-  body:has(.hero.has-pillars) .brand img { height: 2.2rem; }
-  body:has(.hero.has-pillars) .header-bar { min-height: var(--header-h); }
   body:has(.hero.has-pillars) .menu { width: 2.25rem; height: 2.25rem; }
 
   .hero.has-pillars {
