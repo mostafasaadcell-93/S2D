@@ -406,7 +406,8 @@ body.menu-open .site-header {
   align-self: center;
   padding-block: 4rem;
 }
-.page-hero h1 { max-width: 10.5em; margin-bottom: 1.5rem; }
+.page-hero h1,
+.page-hero .about-hero-lead .h-lg { max-width: 10.5em; margin-bottom: 1.5rem; }
 .page-hero .copy { margin-bottom: 2.25rem; color: var(--text); }
 @media (min-width: 960px) {
   .page-hero .media-cover { left: 38%; }
@@ -662,10 +663,28 @@ body.menu-open .site-header {
 .chips li { list-style: none; padding-inline: 1.5rem; border-left: 1px solid var(--line); }
 .chips li:first-child { padding-left: 0; border-left: 0; }
 .chips { padding: 0; margin-bottom: 0; }
+@media (max-width: 719px) {
+  .band .chips {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.9rem;
+  }
+  .band .chips li {
+    padding: 0;
+    border: 0;
+  }
+}
 @media (min-width: 900px) {
   .band-inner { grid-template-columns: 1fr 1fr; align-items: end; }
   .band .chips { grid-column: 1 / -1; }
 }
+
+/* Combined homepage: in-page sections clear the fixed header,
+   and the projects intro does not repeat a full page-top offset. */
+#about,
+#projects,
+#talk { scroll-margin-top: var(--header-h); }
+.home-combined .client-projects-intro { padding-top: clamp(4.5rem, 9vw, 7.5rem); }
 
 /* ---------- Projects ---------- */
 
@@ -1089,12 +1108,13 @@ body.menu-open .site-header {
   .about-quality-hero .media-cover video,
   .about-quality-hero .media-cover img {
     object-fit: cover;
-    object-position: center 36%;
-    transform: scale(1.75);
-    transform-origin: center 36%;
+    object-position: center center;
+    transform: none;
   }
   .about-quality-hero .shade-left::after {
-    background: linear-gradient(180deg, rgba(var(--shade), 0.4) 0%, rgba(var(--shade), 0.08) 14%, transparent 30%);
+    background:
+      linear-gradient(180deg, rgba(8, 18, 28, 0.45) 0%, rgba(8, 18, 28, 0.08) 14%, transparent 26%),
+      linear-gradient(180deg, transparent 40%, rgba(8, 18, 28, 0.9) 58%, #08121c 70%, #08121c 100%);
   }
   .about-quality-hero .page-hero-inner { display: contents; }
   .about-quality-hero .about-hero-lead {
@@ -1104,11 +1124,12 @@ body.menu-open .site-header {
     justify-self: stretch;
     z-index: 2;
     width: 100%;
-    padding: 3.6rem 24px 1.45rem;
-    background: linear-gradient(180deg, rgba(8, 18, 28, 0) 0%, rgba(8, 18, 28, 0.3) 32%, rgba(8, 18, 28, 0.9) 64%, #08121c 84%, #08121c 100%);
+    padding: 8rem 24px 1.45rem;
+    background: linear-gradient(180deg, rgba(8, 18, 28, 0) 0%, rgba(8, 18, 28, 0.55) 30%, rgba(8, 18, 28, 0.94) 54%, #08121c 72%, #08121c 100%);
   }
   .about-quality-hero .about-hero-lead .label { margin-bottom: 0.5rem; }
-  .about-quality-hero h1 {
+  .about-quality-hero h1,
+  .about-quality-hero .about-hero-lead .h-lg {
     max-width: none;
     margin-bottom: 0.8rem;
     font-size: clamp(2rem, 8.2vw, 2.375rem);

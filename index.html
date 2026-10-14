@@ -20,7 +20,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&amp;family=Montserrat:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/site.css?v=hero-mobile-1">
+  <link rel="stylesheet" href="/assets/css/site.css?v=home-scroll-1">
   <script defer src="/assets/js/images.js?v=hero-photo-1"></script>
   <script defer src="/assets/js/projects-data.js?v=mock1"></script>
   <script defer src="/assets/js/site.js?v=hero-playback2"></script>
@@ -29,13 +29,13 @@
   <a class="skip" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="shell header-bar">
-      <a class="brand" href="/" aria-label="S2D Contracting home">
+      <a class="brand" href="#home" aria-label="S2D Contracting home">
         <img src="/assets/images/logo.png" alt="S2D Contracting" width="1257" height="611">
       </a>
       <nav class="nav" id="nav" aria-label="Main navigation">
-        <a href="/" aria-current="page">Home</a>
-        <a href="/about.html">About</a>
-        <a href="/projects.html">Projects</a>
+        <a href="#home" aria-current="page">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
         <a href="/services.html">Services</a>
         <a href="/contact.html">Contact</a>
         <a class="btn btn-outline" href="/contact.html">Get in touch <span class="arrow" aria-hidden="true">→</span></a>
@@ -44,46 +44,112 @@
       <button class="menu" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open menu"><span></span></button>
     </div>
   </header>
-  <main id="main">
-    <section class="hero has-pillars">
+  <main id="main" class="home-combined">
+    <section class="hero has-pillars" id="home">
       <div class="media media-cover shade-left" data-image-id="hero" data-eager></div>
       <div class="shell hero-inner">
         <p class="kicker-row caps"><span>Interior</span><span>Architecture</span><span>Turnkey</span></p>
         <h1 class="h-xl">Exceptional Spaces.<br>Timeless Design.</h1>
         <p class="lead"><span class="lead-break">Bespoke interior architecture,</span> design &amp; contracting in Lebanon.</p>
         <div class="hero-actions">
-          <a class="btn btn-cream" href="/projects.html">Explore projects <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="btn btn-cream" href="#projects">Explore projects <span class="arrow" aria-hidden="true">→</span></a>
           <a class="link-underline" href="/contact.html">Contact us</a>
         </div>
       </div>
       <p class="hero-place caps">Beirut · Lebanon</p>
     </section>
 
-    <section class="shell pillars" aria-label="What we do">
-      <a class="pillar shade-bottom reveal" href="/services.html#design">
-        <div class="media media-cover" data-image-id="bliss-12-01" data-decorative></div>
-        <div class="pillar-copy">
-          <span class="num caps">01</span>
-          <h3>Design</h3>
-          <p class="caps">Tailored spaces with purpose</p>
+    <section class="page-hero about-quality-hero" id="about">
+      <div class="media media-cover shade-left" data-image-id="client-about-building" data-focal="center 45%" data-eager data-decorative></div>
+      <div class="shell page-hero-inner">
+        <div class="about-hero-lead">
+          <p class="label">About S2D</p>
+          <h2 class="h-lg">Built on Heritage.<br>Driven by Excellence.</h2>
+          <a class="link-arrow" href="#experience">Discover our story <span aria-hidden="true">→</span></a>
         </div>
-      </a>
-      <a class="pillar shade-bottom reveal" href="/services.html#build">
-        <div class="media media-cover" data-image-id="villa-tyre-06" data-decorative></div>
-        <div class="pillar-copy">
-          <span class="num caps">02</span>
-          <h3>Build</h3>
-          <p class="caps">Quality through detail</p>
+        <p class="copy">A family legacy with 30+ years of experience across Lebanon, UAE, Saudi Arabia and Angola. From luxury residences and commercial destinations to technical planning, site execution and turnkey delivery, S2D works with private clients, developers and major companies as both main contractor and specialist subcontractor.</p>
+      </div>
+    </section>
+
+    <section class="reach section" aria-labelledby="reach-title">
+      <div class="shell reach-inner">
+        <div class="reveal">
+          <p class="label" id="reach-title">Our reach</p>
+          <div class="reach-stats">
+            <div class="stat"><strong>30+</strong><span>Years of heritage</span></div>
+            <div class="stat"><strong>4</strong><span>Countries</span></div>
+            <div class="stat is-word"><strong>Multidisciplinary</strong><span>Expertise</span></div>
+          </div>
         </div>
-      </a>
-      <a class="pillar shade-bottom reveal" href="/services.html#furnish">
-        <div class="media media-cover" data-image-id="mar-mikhael-1325-01" data-decorative></div>
-        <div class="pillar-copy">
-          <span class="num caps">03</span>
-          <h3>Furnish</h3>
-          <p class="caps">Complete spaces ready to live</p>
+        <div class="map reveal" role="img" aria-label="Map showing S2D's work in Lebanon, Saudi Arabia, the UAE and Angola">
+          <img src="/assets/images/world-dots.svg" alt="" width="1260" height="600" loading="lazy">
+          <span class="pin" style="left:59.5%;top:39%;--dy:-0.9rem"><span>Lebanon</span></span>
+          <span class="pin is-left" style="left:62.4%;top:46%;--dy:0.9rem"><span>Saudi Arabia</span></span>
+          <span class="pin" style="left:65.6%;top:49%;--dy:0.6rem"><span>UAE</span></span>
+          <span class="pin is-left" style="left:54%;top:65%"><span>Angola</span></span>
         </div>
-      </a>
+      </div>
+    </section>
+
+    <section class="section" id="experience" aria-labelledby="experience-title">
+      <div class="shell heading-row reveal">
+        <div>
+          <p class="label">Our experience</p>
+          <h2 class="h-lg" id="experience-title">A broader perspective<br>on what we build.</h2>
+        </div>
+        <p class="aside caps">Diverse sectors.<br>Integrated expertise.<br>A commitment to lasting value.</p>
+      </div>
+      <div class="tiles">
+        <a class="tile shade-bottom" href="/project.html?project=hazmieh-residences"><div class="media media-cover" data-image-id="hazmieh-residences-08" data-decorative></div><span class="label">Residential</span></a>
+        <a class="tile shade-bottom" href="/project.html?project=mundos-food-court"><div class="media media-cover" data-image-id="mundos-food-court-01" data-decorative></div><span class="label">Commercial</span></a>
+        <a class="tile shade-bottom" href="/project.html?project=villa-south-lebanon"><div class="media media-cover" data-image-id="villa-south-lebanon-08" data-decorative></div><span class="label">Planning</span></a>
+        <a class="tile shade-bottom" href="/project.html?project=villa-tyre"><div class="media media-cover" data-image-id="villa-tyre-13" data-decorative></div><span class="label">Site execution</span></a>
+        <a class="tile shade-bottom" href="/project.html?project=villa-tyre"><div class="media media-cover" data-image-id="villa-tyre-08" data-decorative></div><span class="label">Interiors</span></a>
+        <a class="tile shade-bottom" href="/project.html?project=villa-south-lebanon"><div class="media media-cover" data-image-id="villa-south-lebanon-12" data-decorative></div><span class="label">Technical precision</span></a>
+      </div>
+    </section>
+
+    <section class="band section" aria-labelledby="expertise-title">
+      <div class="media media-cover shade-left" data-image-id="villa-south-lebanon-13" data-decorative></div>
+      <div class="shell band-inner reveal">
+        <div>
+          <p class="label">Our expertise</p>
+          <h2 class="h-lg" id="expertise-title">From concept<br>to completion.</h2>
+        </div>
+        <p class="copy">Integrated design and construction solutions delivered with precision, quality and a long-term vision.</p>
+        <ul class="chips">
+          <li>Architecture</li><li>Interior Design</li><li>Civil Engineering</li><li>MEP</li><li>Turnkey Contracting</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="client-projects-intro shell home-projects-intro" id="projects">
+      <p class="label">Our work</p>
+      <h2 class="h-xl">Selected Projects.</h2>
+      <p class="copy">A curated selection across residential, commercial and turnkey execution.</p>
+    </section>
+    <section class="shell client-projects-selection" aria-label="Selected work">
+      <article class="client-project-featured">
+        <a href="/project.html?project=villa-tyre" class="client-project-featured-image client-villa-true-photo"><img src="/assets/media/client-2026/projects-residence-focus.webp" alt="Luxury private villa with illuminated swimming pool" loading="eager"></a>
+        <div class="client-project-featured-text"><p class="num">01</p><h2 class="h-lg">Private<br>Residence</h2><p class="caps">Tyre · Lebanon</p><a class="link-arrow" href="/project.html?project=villa-tyre">View project <span aria-hidden="true">→</span></a></div>
+      </article>
+      <div class="client-project-card-grid">
+        <a class="client-project-card" href="/project.html?project=mundos-food-court"><img src="/assets/media/client-2026/projects-hospitality.webp" alt="Completed commercial hospitality interior"><span class="client-project-card-copy"><span class="num">02</span><strong>Commercial Hospitality</strong><small>Luanda · Angola</small></span></a>
+        <a class="client-project-card" href="/project.html?project=villa-tyre"><img src="/assets/media/client-2026/projects-interior.webp" alt="Contemporary residential interior design"><span class="client-project-card-copy"><span class="num">03</span><strong>Interior Design</strong><small>Residential interiors</small></span></a>
+        <a class="client-project-card" href="/project.html?project=hazmieh-residences"><img src="/assets/media/client-2026/projects-planning.webp" alt="Architectural plans and technical drawings"><span class="client-project-card-copy"><span class="num">04</span><strong>Planning &amp; Technical</strong><small>Design and planning</small></span></a>
+        <a class="client-project-card" href="/project.html?project=villa-tyre"><img src="/assets/media/client-2026/projects-construction.webp" alt="Reinforced concrete slab under construction"><span class="client-project-card-copy"><span class="num">05</span><strong>Site Execution</strong><small>Lebanon</small></span></a>
+      </div>
+      <div class="client-project-all">
+        <p class="label">Explore our full portfolio</p>
+        <div class="client-project-card-grid">
+          <a class="client-project-card" href="/project.html?project=hazmieh-residences"><img src="/assets/media/client-2026/about-building.webp" alt="Hazmieh Luxury Residences, stone facade with lit terraces at dusk" loading="lazy"><span class="client-project-card-copy"><span class="num">06</span><strong>Hazmieh Luxury Residences</strong><small>Hazmieh · Lebanon</small></span></a>
+          <a class="client-project-card" href="/project.html?project=achrafieh-airbnb-1133"><img src="/assets/media/achrafieh-airbnb-1133/01.webp" alt="Living room with rattan pendant and olive sofa" loading="lazy"><span class="client-project-card-copy"><span class="num">07</span><strong>Achrafieh Apartment 1133</strong><small>Achrafieh · Beirut</small></span></a>
+          <a class="client-project-card" href="/project.html?project=mar-mikhael-1325"><img src="/assets/media/mar-mikhael-1325/01.webp" alt="Open living area with marble breakfast bar" loading="lazy"><span class="client-project-card-copy"><span class="num">08</span><strong>Mar Mikhael Apartment 1325</strong><small>Mar Mikhael · Beirut</small></span></a>
+          <a class="client-project-card" href="/project.html?project=bliss-12"><img src="/assets/media/bliss-12/03.webp" alt="3D render: lounge chairs by the window" loading="lazy"><span class="client-project-card-copy"><span class="num">09</span><strong>Bliss 12</strong><small>Lebanon</small></span></a>
+          <a class="client-project-card" href="/project.html?project=gemmayze-airbnb"><img src="/assets/media/gemmayze-airbnb/01-poster.webp" alt="Gemmayze apartment walkthrough video" loading="lazy"><span class="client-project-card-copy"><span class="num">10</span><strong>Gemmayze Apartment</strong><small>Gemmayze · Beirut</small></span></a>
+          <a class="client-project-card" href="/project.html?project=villa-south-lebanon"><img src="/assets/media/villa-south-lebanon/01.webp" alt="Stone villa in South Lebanon with arched facade and lawn" loading="lazy"><span class="client-project-card-copy"><span class="num">11</span><strong>Stone Villa, South Lebanon</strong><small>South Lebanon</small></span></a>
+        </div>
+      </div>
     </section>
 
     <section class="talk section" id="talk">
@@ -103,20 +169,11 @@
           </div>
       </div>
     </section>
-
-    <section class="section" aria-label="S2D in numbers">
-      <div class="shell stats">
-        <div class="stat reveal"><strong>10+</strong><span class="caps">Years of experience</span></div>
-        <div class="stat reveal"><strong>50+</strong><span class="caps">Completed projects</span></div>
-        <div class="stat reveal"><strong>Full</strong><span class="caps">Turnkey solutions</span></div>
-        <div class="stat reveal"><strong>1</strong><span class="caps">Dedicated team</span></div>
-      </div>
-    </section>
   </main>
   <footer class="site-footer">
     <div class="shell">
       <div class="footer-line">
-        <a class="footer-brand" href="/" aria-label="S2D Contracting home">
+        <a class="footer-brand" href="#home" aria-label="S2D Contracting home">
           <img src="/assets/images/logo.png" alt="S2D Contracting" width="1257" height="611" loading="lazy">
         </a>
         <span class="rule" aria-hidden="true"></span>
@@ -124,9 +181,9 @@
       </div>
       <div class="footer-meta">
         <nav aria-label="Footer navigation">
-          <a href="/">Home</a>
-          <a href="/about.html">About</a>
-          <a href="/projects.html">Projects</a>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
           <a href="/services.html">Services</a>
           <a href="/contact.html">Contact</a>
         </nav>
